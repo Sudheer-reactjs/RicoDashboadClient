@@ -16,6 +16,9 @@ const config: Config = {
       fontFamily: {
         antic: ['var(--font-antic)'],
         gotham: ['var(--font-gotham)'],
+        gothamBlack: ['var(--font-GothamPro-Black)'],
+        gothamBold: ['var(--font-GothamPro-Bold)'],
+        gothamMedium: ['var(--font-GothamPro-Medium)'], 
       },
     },
   },

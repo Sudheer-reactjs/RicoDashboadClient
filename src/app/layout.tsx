@@ -9,6 +9,22 @@ const gothamPro = localFont({
   display: 'swap',
   variable: '--font-gotham',
 });
+const GothamProBlack = localFont({
+  src: '../assets/fonts/GothamPro-Black.ttf',
+  display: 'swap',
+  variable: '--font-GothamPro-Black', 
+});
+const GothamProBold = localFont({
+  src: '../assets/fonts/GothamPro-Bold.ttf',
+  display: 'swap',
+  variable: '--font-GothamPro-Bold', 
+});
+
+const GothamProMedium = localFont({
+  src: '../assets/fonts/GothamPro-Medium.ttf',
+  display: 'swap',
+  variable: '--font-GothamPro-Medium',  
+});
 
 const anticDidone = localFont({
   src: '../assets/fonts/AnticDidoneRegular.ttf',
@@ -28,7 +44,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${gothamPro.variable} ${anticDidone.variable}`}>
+      <body className={`${gothamPro.variable} ${anticDidone.variable} ${GothamProBlack.variable} ${GothamProBold.variable} ${GothamProMedium.variable}`}>
         <div className="flex h-screen flex-col lg:flex-row lg:overflow-hidden">
           <div className="flex-none hidden h-[100vh] lg:block">
             <SideNav />

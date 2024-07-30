@@ -76,7 +76,7 @@ const SideNav = () => {
           <li className="!m-0">
             <a onClick={handleLogout} style={{ cursor: 'pointer' }}>
               <LogOut />
-              {!isCollapsed && <span className="text-[#283C63]">Log Out</span>}
+              {!isCollapsed && <span className="text-[#283C63] text-[600]">Log Out</span>}
             </a>
           </li>
         </ul>

@@ -77,7 +77,7 @@ const MobileHeader = () => {
           <li className="!m-0">
             <a onClick={handleLogout} style={{ cursor: 'pointer' }}>
               <LogOut />
-               <span className="text-[#283C63]">Log Out</span>
+               <span className="text-[#283C63] text-[600]">Log Out</span>
             </a>
           </li>
         </ul>

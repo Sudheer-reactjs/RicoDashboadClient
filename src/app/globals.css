@@ -17,22 +17,42 @@
 body {
   color: rgb(var(--foreground-rgb));
   background: var(--background-start-rgb);
-  font-family:var(--font-gotham); 
   font-size: 14px;
 }
+body, a, p {
+  font-family:var(--font-gotham); 
+}
+p{
+  color: #686C78;
+}
+h1{
+  font-family:var(--font-antic); 
+}
+h2 {
+  font-family:var(--font-GothamPro-Bold);  
+  color: #283C63; 
+}
+h3, h4, h5 ,h6 {
+  font-family:var(--font-GothamPro-Medium); 
+  color: #283C63;
+}
 h2{
-  font-size: 30px;  
+ font-size: 30px;  
  font-style: normal; 
- font-weight: 700;
  line-height: 46px;
  color: #283C63;
 }
 h3{
 font-size: 26px;
  font-style: normal;
- font-weight: 700;
  line-height: 36px; 
  color: #283C63;
+}
+h5{
+  font-size: 18px;
+}
+h6{
+  font-size: 16px;
 }
 @media screen and (max-width: 1023px) {
   h2{
