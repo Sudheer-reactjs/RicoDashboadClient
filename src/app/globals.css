@@ -3,9 +3,7 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --background-start-rgb: #E7F8F6;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -18,14 +16,34 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background: var(--background-start-rgb);
+  font-family:var(--font-gotham); 
+  font-size: 14px;
 }
-
+h2{
+  font-size: 30px;  
+ font-style: normal; 
+ font-weight: 700;
+ line-height: 46px;
+ color: #283C63;
+}
+h3{
+font-size: 26px;
+ font-style: normal;
+ font-weight: 700;
+ line-height: 36px; 
+ color: #283C63;
+}
+@media screen and (max-width: 1023px) {
+  h2{
+    font-size: 26px;
+   line-height: 38px;
+  }
+  h3{
+  font-size: 22px; 
+   line-height: 30px;
+  }
+}
 @layer utilities {
   .text-balance {
     text-wrap: balance;
