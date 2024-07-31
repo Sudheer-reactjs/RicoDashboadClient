@@ -20,7 +20,7 @@ type DashboardCardProps = {
 const DashboardCard: React.FC<DashboardCardProps> = ({ nextAppointment, previousAppointment, previousBilled }) => {
     return (
       <>
-        <div className="grid md:grid-cols-3 gap-[15px] mt-[30px] lg:gap-[24px] lg:mt-[50px]">
+        <div className="grid md:grid-cols-3 gap-[15px] mt-[30px]  mb-[30px] lg:gap-[24px] lg:mt-[50px] lg:mb-[45px]">
           <div className="bg-[#CCE9FA] bg-[url('../assets/images/card-bg.png')] bg-[top_right] bg-no-repeat bg-cover rounded-[10px] py-6 px-[15px] lg:px-[30px]">  
             <h6 className="text-[#686868]">Next Appointment</h6>
             <h2>{nextAppointment.date}</h2>

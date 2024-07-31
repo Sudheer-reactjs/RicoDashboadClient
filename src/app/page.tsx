@@ -1,3 +1,4 @@
+import DashboardAssignment from "@/components/DashboardAssignment";
 import DashboardCard from "@/components/DashboardCard";
 
 const Home = () => {
@@ -33,6 +34,7 @@ const Home = () => {
      previousAppointment={previousAppointment}
      previousBilled={previousBilled}
    />
+   <DashboardAssignment /> 
   </>
   );
 };

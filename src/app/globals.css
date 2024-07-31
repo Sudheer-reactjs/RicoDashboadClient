@@ -54,6 +54,81 @@ h5{
 h6{
   font-size: 16px;
 }
+th, td {
+  padding: 11px 20px;
+  color: #686C78;
+}
+.table-common {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+.table-common  table {
+  width: 100%;
+  min-width: 800px;
+  background: #FFFFFF;
+}
+.table-common table thead tr {
+  background: #26395E;
+}
+.table-common table tbody tr td:first-child {
+  color: #26395E;
+}
+.table-common table tbody tr:nth-child(even) {
+  background: #EBF3F8;
+}
+.table-common table thead tr th {
+  color: #fff;
+  font-weight: normal;
+  text-align: left;
+  font-size: 14px;
+  padding: 14px 20px;
+}
+.pagination-custom {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: 50px;
+  border: solid 1px #D5DCEA;
+  border-radius: 5px;
+}
+.pagination-custom-outer {
+  display: flex;
+  justify-content: flex-end;
+}
+.pagination-custom-outer button {
+  width: 36px;
+  height: 36px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  border-radius: 5px;
+  font-size: 12px;
+}
+button:disabled {
+  opacity: 0.4;
+}
+h4{
+  font-size: 22px;
+}
+select, input {
+  border: solid 1px #CDE3F1;
+  padding: 18px;
+  display: inline-block;
+  border-radius: 10px;
+  font-size: 12px;
+  color: #686C78;
+}
+button.button {
+  border-radius: 10px;
+  background: #283C63;
+  display: flex;
+  align-items: center;
+  padding: 14.3px 36px;
+  grid-gap: 10px;
+  color: #fff;
+  font-size: 16px;
+  margin-top: 30px;
+}
 @media screen and (max-width: 1023px) {
   h2{
     font-size: 26px;
@@ -62,6 +137,9 @@ h6{
   h3{
   font-size: 22px; 
    line-height: 30px;
+  }
+  h4{
+    font-size:18px;
   }
 }
 @layer utilities {
