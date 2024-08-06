@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root {
-  --background-start-rgb: #E7F8F6;
+  --background-start-rgb: #e7f8f6;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -19,62 +19,74 @@ body {
   background: var(--background-start-rgb);
   font-size: 14px;
 }
-body, a, p {
-  font-family:var(--font-gotham); 
+body,
+a,
+p {
+  font-family: var(--font-gotham);
 }
-p{
-  color: #686C78;
+p {
+  color: #686c78;
 }
-h1{
-  font-family:var(--font-antic); 
+h1 {
+  font-family: var(--font-antic);
 }
 h2 {
-  font-family:var(--font-GothamPro-Bold);  
-  color: #283C63; 
+  font-family: var(--font-GothamPro-Bold);
+  color: #283c63;
 }
-h3, h4, h5 ,h6 {
-  font-family:var(--font-GothamPro-Medium); 
-  color: #283C63;
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-GothamPro-Medium);
+  color: #283c63;
 }
-h2{
- font-size: 30px;  
- font-style: normal; 
- line-height: 46px;
- color: #283C63;
+h2 {
+  font-size: 30px;
+  font-style: normal;
+  line-height: 46px;
+  color: #283c63;
 }
-h3{
-font-size: 26px;
- font-style: normal;
- line-height: 36px; 
- color: #283C63;
+h3 {
+  font-size: 26px;
+  font-style: normal;
+  line-height: 36px;
+  color: #283c63;
 }
-h5{
+h5 {
   font-size: 18px;
 }
-h6{
+h6 {
   font-size: 16px;
 }
-th, td {
+th,
+td {
   padding: 11px 20px;
-  color: #686C78;
+  color: #686c78;
+  white-space: nowrap;
 }
 .table-common {
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
 }
-.table-common  table {
+.reactpaginate li a {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+.table-common table {
   width: 100%;
   min-width: 800px;
-  background: #FFFFFF;
+  background: #ffffff;
 }
 .table-common table thead tr {
-  background: #26395E;
+  background: #26395e;
 }
 .table-common table tbody tr td:first-child {
-  color: #26395E;
+  color: #26395e;
 }
 .table-common table tbody tr:nth-child(even) {
-  background: #EBF3F8;
+  background: #ebf3f8;
 }
 .table-common table thead tr th {
   color: #fff;
@@ -88,7 +100,7 @@ th, td {
   align-items: center;
   justify-content: flex-end;
   margin-top: 50px;
-  border: solid 1px #D5DCEA;
+  border: solid 1px #d5dcea;
   border-radius: 5px;
 }
 .pagination-custom-outer {
@@ -107,20 +119,21 @@ th, td {
 button:disabled {
   opacity: 0.4;
 }
-h4{
+h4 {
   font-size: 22px;
 }
-select, input {
-  border: solid 1px #CDE3F1;
+select,
+input {
+  border: solid 1px #cde3f1;
   padding: 18px;
   display: inline-block;
   border-radius: 10px;
   font-size: 12px;
-  color: #686C78;
+  color: #686c78;
 }
 button.button {
   border-radius: 10px;
-  background: #283C63;
+  background: #283c63;
   display: flex;
   align-items: center;
   padding: 14.3px 36px;
@@ -129,17 +142,33 @@ button.button {
   font-size: 16px;
   margin-top: 30px;
 }
+.overflo-custom {
+  overflow: scroll;
+}
+.overflo-custom::-webkit-scrollbar-track { 
+  background-color: #ffffff;
+}
+
+.overflo-custom::-webkit-scrollbar {
+  width: 6px;
+  background-color: #283c63;
+}
+
+.overflo-custom::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #283c6355;
+}
 @media screen and (max-width: 1023px) {
-  h2{
+  h2 {
     font-size: 26px;
-   line-height: 38px;
+    line-height: 38px;
   }
-  h3{
-  font-size: 22px; 
-   line-height: 30px;
+  h3 {
+    font-size: 22px;
+    line-height: 30px;
   }
-  h4{
-    font-size:18px;
+  h4 {
+    font-size: 18px;
   }
 }
 @layer utilities {
