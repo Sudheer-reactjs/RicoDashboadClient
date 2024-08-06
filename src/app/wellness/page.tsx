@@ -1,4 +1,9 @@
 "use client";
+
+import AttachmentsWellness from '@/components/AttachmentsWellness';
+import PreviousAppointments from '@/components/PreviousAppointments';
+import UpcomingAppointments from '@/components/UpcomingAppointments';
+import VideosWellness from '@/components/VideosWellness';
 import { useState } from 'react';
 const Page = () => {
     const [activeTab, setActiveTab] = useState('Previous Appointments');
@@ -6,13 +11,13 @@ const Page = () => {
     const renderTabContent = () => {
       switch (activeTab) {
         case 'Previous Appointments':
-          return <div>Content for Previous Appointments</div>;
+          return <div><PreviousAppointments /></div>; 
         case 'Upcoming Appointments':
-          return <div>Content for Upcoming Appointments</div>;
+          return <div><UpcomingAppointments /></div>;
         case 'Videos':
-          return <div>Content for Videos</div>;
+          return <div><VideosWellness /></div>; 
         case 'Attachments':
-          return <div>Content for Attachments</div>;
+          return <div><AttachmentsWellness /></div>;
         default:
           return null;
       }
@@ -20,14 +25,14 @@ const Page = () => {
   return (
     <>
       <h1 className="font-antic text-[#283C63] text-[30px] leading-[1.2em] mb-[25px] lg:text-[40px] lg:mb-[50px]">
-        wellness portal<span>sdfsdfs</span>
+        Wellness Portal
       </h1>
       <div>
-      <div className="tabs">
+      <div className="tabs flex flex-wrap gap-[5px] mb-[20px] lg:gap-[20px]">
         {['Previous Appointments', 'Upcoming Appointments', 'Videos', 'Attachments'].map((tab) => (
           <button
             key={tab}
-            className={`tab-button ${activeTab === tab ? 'active' : ''}`}
+            className={`tab-button ${activeTab === tab ? 'active' : '!bg-transparent border-[1px] !border-[#283c63] !text-[#283c63]'} bg-[#283c63] text-[#fff] rounded-[6px] mt-0 text-[14px] py-[8px] px-[16px] lg:px-[32px] lg:py-[12px] `}
             onClick={() => setActiveTab(tab)}
           >
             {tab}

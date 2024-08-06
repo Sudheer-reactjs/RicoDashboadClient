@@ -1,6 +1,5 @@
 "use client";
 import React, { ReactNode, useState, CSSProperties } from "react";
-import Link from "next/link";
 import ReactPaginate from "react-paginate";
 import Image from "next/image";
 import PervIcon from "../assets/images/pervicon.png";
@@ -160,6 +159,7 @@ const DashboardAssignment = () => {
                 <td>
                   {isPastDate(item.renewalDate) ? (
                     <span
+                      className="cursor-pointer"
                       style={getStyle("Renew Subscription")}
                       onClick={handleRenewClick}
                     >
@@ -171,12 +171,16 @@ const DashboardAssignment = () => {
                 </td>
                 <td>
                   {item.chatWithClinician === "Start Chat" ? (
-                    <span style={getStyle("Start Chat")}>
+                    <span
+                      className="cursor-pointer"
+                      style={getStyle("Start Chat")}
+                    >
                       {item.chatWithClinician}
                     </span>
                   ) : isPastDate(item.renewalDate) ||
                     item.chatWithClinician === "Renew Subscription" ? (
                     <span
+                      className="cursor-pointer"
                       style={getStyle("Renew Subscription")}
                       onClick={handleRenewClick}
                     >
@@ -191,6 +195,7 @@ const DashboardAssignment = () => {
                 <td>
                   {item.videoChat === "Start Video Call" ? (
                     <span
+                      className="cursor-pointer"
                       style={getStyle("Start Video Call")}
                     >
                       {item.videoChat}
@@ -198,6 +203,7 @@ const DashboardAssignment = () => {
                   ) : isPastDate(item.renewalDate) ||
                     item.videoChat === "Renew Subscription" ? (
                     <span
+                      className="cursor-pointer"
                       style={getStyle("Renew Subscription")}
                       onClick={handleRenewClick}
                     >
@@ -211,7 +217,10 @@ const DashboardAssignment = () => {
                 </td>
                 <td>{item.billingAmount}</td>
                 <td>
-                  <span onClick={handleViewTeam}>
+                  <span
+                    className="cursor-pointer w-[26px] flex"
+                    onClick={handleViewTeam}
+                  >
                     <ViewIcon />
                   </span>
                 </td>
@@ -359,7 +368,7 @@ const DashboardAssignment = () => {
                 alt={therapist.name}
                 className="rounded-[20px] w-full aspect-square cover"
               />
-              <h4 className="mt-4 font-gotham">{therapist.name}</h4> 
+              <h4 className="mt-4 font-gotham">{therapist.name}</h4>
             </div>
           ))}
         </div>

@@ -69,12 +69,6 @@ const SideNav = () => {
               {!isCollapsed && <span>Billing & Insurance</span>}
             </Link>
           </li>
-          <li className={isActive('/billing-insurance')}>
-          <Link href="/billing-insurance">
-              <BillingInsuranceIcon />
-              {!isCollapsed && <span>Billing & Insurance</span>}
-            </Link>
-          </li>
         </ul>
       </div>
       <div className="">
